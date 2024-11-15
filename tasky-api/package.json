@@ -8,7 +8,7 @@
   },
   "author": "Sihan Ma/20108801",
   "license": "ISC",
-  "description": "",
+  "description": "Finish assignment 1 for WAD2",
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/eslint-parser": "^7.25.9",

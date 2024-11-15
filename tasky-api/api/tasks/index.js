@@ -1,10 +1,10 @@
 import express from 'express';
-import { tasksData } from './tasksData';
 import { v4 as uuidv4 } from 'uuid';
+import { tasksData } from './tasksData';
 
 const router = express.Router(); 
 
-router.get('/', (req, res) => {
+router.get('/', (res) => {
     res.json(tasksData);
 });
 
