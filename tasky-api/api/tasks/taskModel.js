@@ -6,10 +6,14 @@ const TaskSchema = new Schema({
   title:  String,
   description:  String ,
   deadline: Date,
-    done: Boolean,
-    priority: {type: String, enum: ["Low","Medium","High"]},
-    created_at: Date,
-    updated_at: Date
+  done: Boolean,
+  priority: {type: String, enum: ["Low","Medium","High"]},
+  created_at: Date,
+  updated_at: Date,
+  userId: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  },
 });
 
 const dateValidator = (date) => {
