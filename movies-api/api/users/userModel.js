@@ -24,10 +24,9 @@ UserSchema.pre('save', async function(next) {
       const hash = await bcrypt.hash(this.password, saltRounds);
       this.password = hash;
       next();
-  } catch (error) {
+    } catch (error) {
      next(error);
-  }
-
+    }
   } else {
       next();
   }
